@@ -1,0 +1,10 @@
+{
+  "version": "0.2",
+  "configurations": [
+	{
+	  "type": "project",
+	  "project": "SplitBill.App/SplitBill.App.vbproj",
+	  "name": "SplitBill.App"
+	}
+  ]
+}

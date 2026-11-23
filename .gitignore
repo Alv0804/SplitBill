@@ -1,0 +1,51 @@
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa]rms/
+[Aa]rm64/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio cache / temporary files
+.vs/
+*.vsidx
+Generated\ Files/
+
+## Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.visualstudio.codecoverage
+*.coverage
+*.coveragexml
+
+## Sensitive / Local Secrets & Environment
+*.env
+*.env.*
+appsettings.local.json
+*.local.json
+secrets.json
+
+## OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+## Agent & AI workspace files
+.agents/
+skills-lock.json

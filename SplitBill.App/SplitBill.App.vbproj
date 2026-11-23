@@ -1,0 +1,168 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>SplitBill.App</RootNamespace>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SplitBill.Core\SplitBill.Core.vbproj" />
+    <ProjectReference Include="..\SplitBill.Data\SplitBill.Data.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Forms -->
+    <Compile Update="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="CreateGroupDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CreateGroupDialog.Designer.vb">
+      <DependentUpon>CreateGroupDialog.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="JoinGroupDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="JoinGroupDialog.Designer.vb">
+      <DependentUpon>JoinGroupDialog.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="AddMemberDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddMemberDialog.Designer.vb">
+      <DependentUpon>AddMemberDialog.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="GroupEditDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GroupEditDialog.Designer.vb">
+      <DependentUpon>GroupEditDialog.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="PersonPickerDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PersonPickerDialog.Designer.vb">
+      <DependentUpon>PersonPickerDialog.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="BillFromOrdersDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillFromOrdersDialog.Designer.vb">
+      <DependentUpon>BillFromOrdersDialog.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="ExpenseCreateDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ExpenseCreateDialog.Designer.vb">
+      <DependentUpon>ExpenseCreateDialog.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="OrderSubmitDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OrderSubmitDialog.Designer.vb">
+      <DependentUpon>OrderSubmitDialog.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="QuickEntryDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QuickEntryDialog.Designer.vb">
+      <DependentUpon>QuickEntryDialog.vb</DependentUpon>
+    </Compile>
+
+    <!-- UserControls / Pages -->
+    <Compile Update="AuthenticationPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AuthenticationPage.Designer.vb">
+      <DependentUpon>AuthenticationPage.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="DashboardPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DashboardPage.Designer.vb">
+      <DependentUpon>DashboardPage.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="EmptyStatePage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EmptyStatePage.Designer.vb">
+      <DependentUpon>EmptyStatePage.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="GroupDetailPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GroupDetailPage.Designer.vb">
+      <DependentUpon>GroupDetailPage.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="GroupListPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GroupListPage.Designer.vb">
+      <DependentUpon>GroupListPage.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="GroupOnboardingPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GroupOnboardingPage.Designer.vb">
+      <DependentUpon>GroupOnboardingPage.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="OwnerDataPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="OwnerDataPage.Designer.vb">
+      <DependentUpon>OwnerDataPage.vb</DependentUpon>
+    </Compile>
+
+    <Compile Update="RoundedPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CreateGroupDialog.resx">
+      <DependentUpon>CreateGroupDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="JoinGroupDialog.resx">
+      <DependentUpon>JoinGroupDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="AddMemberDialog.resx">
+      <DependentUpon>AddMemberDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PersonPickerDialog.resx">
+      <DependentUpon>PersonPickerDialog.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,11 @@
+﻿{
+    "profiles":  {
+                     "SplitBill.App":  {
+                                           "environmentVariables":  {
+                                                                        "SPLITBILL_SUPABASE_ANON_KEY":  "sb_publishable_S652thPhJjl4WLFfv8rE_Q_NqG12yXu",
+                                                                        "SPLITBILL_SUPABASE_URL":  "https://pjaddroobmvovqmmdyip.supabase.co"
+                                                                    },
+                                           "commandName":  "Project"
+                                       }
+                 }
+}

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SplitBill.App/SplitBill.App.vbproj" />
+  <Project Path="SplitBill.Core/SplitBill.Core.vbproj" />
+  <Project Path="SplitBill.Data/SplitBill.Data.vbproj" />
+  <Project Path="SplitBill.Tests/SplitBill.Tests.vbproj" />
+</Solution>
